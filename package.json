@@ -1,0 +1,28 @@
+{
+  "name": "HervidaPabloSQLWebSocketsMocksNormalizacion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "engine": {
+    "node": "16.x"
+  },
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^6.0.2",
+    "normalizr": "^3.6.2",
+    "socket.io": "^4.4.1",
+    "uuid": "^8.3.2",
+    "firebase-admin": "^11.0.1",
+    "mongoose": "6.5.2"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.5.0"
+  }
+}

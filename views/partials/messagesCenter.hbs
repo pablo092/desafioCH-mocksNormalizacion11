@@ -1,0 +1,83 @@
+<h3 style="font-weight: bolder; color: blue;">Centro de Mensajes(Compresión: <span id="compresion-info"></span>%)</h3>
+<form id="chat-form">
+  <div class="form-group" style="max-width: 30%;">
+    <div class="form-group">
+      <input
+        type="email"
+        placeholder="Ingrese mail"
+        name="email"
+        id="email"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        placeholder="Ingrese nombre"
+        name="nombre"
+        id="nombre"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        placeholder="Ingrese apellido"
+        name="apellido"
+        id="apellido"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="number"
+        placeholder="Ingrese edad"
+        name="edad"
+        id="edad"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        placeholder="Ingrese alias"
+        name="alias"
+        id="alias"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="url"
+        placeholder="Ingrese URL de avatar"
+        name="avatar"
+        id="avatar"
+        class="form-control"
+        required
+      />
+    </div>
+
+    <hr style="width:100%;text-align:left;margin-left:0" />
+  </div>
+  <div class="chat-body" id="messages"></div>
+  <div style="max-width: 60%; display: flex;">
+    <textarea
+      id="text-input"
+      name="message"
+      placeholder="Ingrese su mensaje..."
+      class="form-control"
+      required
+    ></textarea>
+    <input
+      type="submit"
+      value="Enviar"
+      style="margin-left: 10px;"
+      class="btn btn-primary"
+    />
+  </div>
+</form>
