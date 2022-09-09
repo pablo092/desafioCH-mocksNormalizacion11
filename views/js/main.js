@@ -34,7 +34,7 @@ socket.emit("join-chat", { email });
 socket.on("chat-message", (normalizedMensajes) => {
   const schemaAuthor = new normalizr.schema.Entity("author",{}, { idAttribute: "email" });
   const schemaMensaje = new normalizr.schema.Entity("post", { author: schemaAuthor }, { idAttribute: "_id" });
-  const schemaMensajes = new normalizr.schema.Entity("posts", { mensajes: [schemaMensaje] }, { idAttribute: "id" });
+  const schemaMensajes = new normalizr.schema.Entity("posts", [schemaMensaje], { idAttribute: "id" });
 
   let mensajesNsize = JSON.stringify(normalizedMensajes).length;
   console.log(normalizedMensajes, mensajesNsize);

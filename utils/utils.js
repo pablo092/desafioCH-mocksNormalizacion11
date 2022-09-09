@@ -6,7 +6,7 @@ const schemaAuthor = new schema.Entity("author", {}, { idAttribute: "email" });
 // Definimos un esquema de mensaje
 const schemaMensaje = new schema.Entity("post", { author: schemaAuthor }, { idAttribute: "_id" });
 // Definimos un esquema de posts
-const schemaMensajes = new schema.Entity("posts", { mensajes: [schemaMensaje] }, { idAttribute: "id" });
+const schemaMensajes = new schema.Entity("posts", [schemaMensaje] , { idAttribute: "id" });
 
 export function print(object) {
   console.log(util.inspect(object, false, 12, true));
@@ -17,7 +17,6 @@ export function normalizarMensajes(mensajes) {
   console.log("NORMALIZADO");
   print(normalized);
 
-  desnormalizarMensajes(normalized);
   return normalized;
 }
 
